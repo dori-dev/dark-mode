@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #00b8cc;
+  --primary-color2: #008bcc;
+  --bg-color: #a5b7c0;
+  --dark-color: #37474f;
+  --light-color: #546e7a;
+  --dark-gray: #1f292d;
+  --light-gray: #2a363c;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.title h1 {
+  color: #fefefe;
+}
+
+.login-section {
+  background-color: var(--dark-color);
+  box-shadow: 0 0 20px var(--dark-gray);
+}
+
+.login-input {
+  color: #fefefe;
+  border: 2px solid var(--light-color);
+  box-shadow: 0 0 8px var(--light-gray);
+  background-color: var(--light-color);
+}
+
+.login-input:focus {
+  box-shadow: 0 0 10px var(--dark-gray);
+}
+
+.login-input::placeholder {
+  color: #fefefe;
+}
+
+.login-btn {
+  color: #fefefe;
+  box-shadow: 0 0 8px var(--light-gray), inset 0 0 5px var(--light-gray);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color2),
+    var(--primary-color)
+  );
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 10px var(--dark-gray), inset 0 0 5px var(--light-gray);
+}
+
+.changer-btn {
+  box-shadow: 0 0 8px var(--light-gray);
+}
+
+.changer-btn:hover {
+  box-shadow: 0 0 10px var(--dark-gray);
+}
+
+.dark-btn {
+  background-color: var(--light-color);
+}
