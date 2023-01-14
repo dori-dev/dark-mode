@@ -1,0 +1,95 @@
+:root {
+  --dark-btn: #37474f;
+  --light-btn: #f57f17;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-section {
+  width: 600px;
+  height: fit-content;
+  max-width: 90%;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.title {
+  margin: 25px 0 50px 0;
+}
+
+.login-input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn {
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mode-changers {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  display: flex;
+}
+
+.changer-btn {
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.changer-btn svg {
+  fill: #fefefe;
+  width: 28px;
+  height: 28px;
+}
+
+.dark-btn {
+  background-color: var(--dark-btn);
+}
+
+.light-btn {
+  background-color: var(--light-btn);
+}
